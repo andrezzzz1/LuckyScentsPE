@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Scandal Le Parfum 50 ml - 18/01/26",
+    "price": 12,
+    "image": "donas_01",
+    "category": "Sorteo"
+  },
+  {
+    "name": "Aqua Dubai & Gold Edition 100ml - 31/01/26",
+    "price": 9,
+    "image": "donas_02",
+    "category": "Sorteo"
+  },
+  {
+    "name": "Le Beau Le Parfum - Próximamente ",
+    "price": 0,
+    "image": "donas_03",
+    "category": "Sorteo"
+  }
+]
