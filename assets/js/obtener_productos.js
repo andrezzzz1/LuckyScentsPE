@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-body">
             <h5 class="card-title">${name}</h5>
             <p class="card-text">Categoría: <strong>${category}</strong></p>
-            <p class="card-text">Precio: <strong class="price">$${price.toFixed(2)}</strong></p>
+            <p class="card-text">Precio: <strong class="price">S/. ${price.toFixed(2)}</strong></p>
             
             <button class="btn btn-cart w-100 mt-auto">
                 Agregar al carrito &nbsp; <i class="bi bi-cart-plus"></i>
