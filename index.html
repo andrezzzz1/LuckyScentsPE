@@ -17,6 +17,41 @@
     />
     <link rel="stylesheet" href="assets/css/home.css" />
   </head>
+ <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Lucky Scents PE</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarLucky"
+      aria-controls="navbarLucky"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarLucky">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#menu">Menú</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sorteos">Sorteos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#perfumes">Otros perfumes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#decants">Decants</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <body>
     <!-- Botón del carrito -->
@@ -36,10 +71,24 @@
     </div>
 
     <!-- Contenedor principal de la tienda de donas -->
-    <div class="container my-5">
+    <div class="container my-5 pt-5" id="menu">
       <h1 class="text-center fw-bold">Lucky Scents PE</h1>
       <div id="donas-container" class="row g-4 mt-4"></div>
     </div>
+<section id="sorteos" class="container my-5">
+  <h2 class="fw-bold mb-3">🎁 Sorteos</h2>
+  <p>Participa en nuestros sorteos de perfumes originales.</p>
+</section>
+
+<section id="perfumes" class="container my-5">
+  <h2 class="fw-bold mb-3">🌸 Otros perfumes</h2>
+  <p>Explora nuestra colección de perfumes completos.</p>
+</section>
+
+<section id="decants" class="container my-5">
+  <h2 class="fw-bold mb-3">🧪 Decants</h2>
+  <p>Prueba perfumes en presentaciones pequeñas.</p>
+</section>
 
     <!-- Offcanvas del carrito -->
     <div
