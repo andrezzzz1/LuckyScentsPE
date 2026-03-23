@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Aether",
+    "price": 210,
+    "image": "EDP-10",
+    "category": "Perfume",
+    "brand": "French Avenue",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Manzana verde, bergamota y mandarina, notas de cedro, musgo de roble y Amberwood."
+  },
+  {
+    "name": "Oddyssey Aqua Men",
+    "price": 199,
+    "image": "oddyseyaqua",
+    "category": "Perfume",
+    "brand": "Armaf",
+    "size": "200 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Naranja, toronja (pomelo), notas de menta y lavanda; ambroxan y pachulí."
+  },
+  {
+    "name": "Oddyssey Mandarin Sky",
+    "price": 159,
+    "image": "mandarin-1",
+    "category": "Perfume",
+    "brand": "Armaf",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Mandarina, naranja, azafrán y salvia; notas de caramelo, haba tonka, ambroxan, cedro y vetiver."
+  },
+  {
+    "name": "Hawas Ice",
+    "price": 210,
+    "image": "hawasice",
+    "category": "Perfume",
+    "brand": "Rasasi",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Limón italiano, bergamota de Sicilia; notas de ciruela, flor de azahar, ámbar y musgo."
+  },
+  {
+    "name": "Yara Women",
+    "price": 135,
+    "image": "full_image-1",
+    "category": "Perfume",
+    "brand": "Lattafa",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Orquídea, heliotropo y naranja tangerina; notas de frutas tropicales, vainilla, almizcle y sándalo."
+  },
+  {
+    "name": "Yara Tous",
+    "price": 135,
+    "image": "yara-tous-1",
+    "category": "Perfume",
+    "brand": "Lattafa",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Mango, coco y maracuyá, notas de jazmín, vainilla, almizcle y cachemira."
+  },
+  {
+    "name": "Club de Nuit Iconic",
+    "price": 169,
+    "image": "iconic",
+    "category": "Perfume",
+    "brand": "Armaf",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Toronja, pimienta rosa, limón, nuez moscada; notas de incienso, notas amaderadas, cedro, ámbar, sándalo, pachulí y ládano."
+  },
+  {
+    "name": "Dynasty",
+    "price": 169,
+    "image": "LATTAFA-DYNASTY-NOTES2_1100x",
+    "category": "Perfume",
+    "brand": "Lattafa",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Bergamota, jengibre, esclarea, frambuesa y nuez moscada; notas de té rooibos, cedro, cachemira y Amberwood."
+  },
+  {
+    "name": "Nitro Red Men",
+    "price": 179,
+    "image": "CopiadeEnvio_21",
+    "category": "Perfume",
+    "brand": "Dumont",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Lavanda, bergamota, notas de sandía, cedro, ámbar, sándalo y pachulí."
+  },
+  {
+    "name": "Boss Bottled Elixir",
+    "price": 419,
+    "image": "bosselixir",
+    "category": "Perfume",
+    "brand": "Hugo Boss",
+    "size": "100 ml",
+    "type": "Diseñador",
+    "concentration": "Elixir",
+    "description": "Incienso y cardamomo; pachulí y vetiver, notas de ládano y cedro."
+  },
+  {
+    "name": "Le Beau Le Parfum",
+    "price": 519,
+    "image": "jean_paul_2",
+    "category": "Perfume",
+    "brand": "Jean Paul Gaultier",
+    "size": "125 ml",
+    "type": "Diseñador",
+    "concentration": "EDP",
+    "description": "Piña, iris, jengibre y ciprés; notas de coco y notas amaderadas, haba tonka, sándalo, ámbar y ámbar gris."
+  },
+  {
+    "name": "Ultramale",
+    "price": 479,
+    "image": "ultramale",
+    "category": "Perfume",
+    "brand": "Jean Paul Gaultier",
+    "size": "125 ml",
+    "type": "Diseñador",
+    "concentration": "EDP",
+    "description": "Pera, lavanda, menta, bergamota y limón; notas de canela, vainilla negra, ámbar, pachulí y cedro."
+  },
+  {
+    "name": "9 PM",
+    "price": 159,
+    "image": "9pmedp",
+    "category": "Perfume",
+    "brand": "Afnan",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Canela, lavanda silvestre y bergamota; notas de lirio de los valles, ámbar y pachulí."
+  },
+  {
+    "name": "Asad",
+    "price": 159,
+    "image": "asadblack",
+    "category": "Perfume",
+    "brand": "Lattafa",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Pimienta negra, tabaco y piña; notas de pachulí, café y iris, vainilla, ámbar, Madera seca, benjuí y ládano."
+  },
+  {
+    "name": "Asad Bourbon",
+    "price": 169,
+    "image": "asadbourbon",
+    "category": "Perfume",
+    "brand": "Lattafa",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Lavanda, ciruela Mirabel y pimienta rosa; notas de cacao, nuez moscada y Davana, vainilla Bourbon, ámbar y vetiver."
+  },
+  {
+    "name": "Liquid Brun",
+    "price": 189,
+    "image": "liquidbrun",
+    "category": "Perfume",
+    "brand": "French Avenue",
+    "size": "100 ml",
+    "type": "Arabe",
+    "concentration": "EDP",
+    "description": "Canela, flor de azahar del naranjo, cardamomo y bergamota; vainilla Bourbon y elemí; notas de praliné, ambroxan, madera de gaiac y almizcle."
+  }
+]
