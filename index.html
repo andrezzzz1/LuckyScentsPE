@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lucky Scents PE</title>
+
+<meta name="description" content="Tienda online de perfumes y decants en Perú. Descubre fragancias exclusivas en Lucky Scents PE.">
+
+<link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+>
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+/>
+
+<link rel="stylesheet" href="assets/css/home.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+  <div class="container">
+
+<!-- LOGO -->
+<a class="navbar-brand fw-bold" href="index.html">
+Lucky Scents <span class="text-warning">PE</span>
+</a>
+
+<!-- BOTÓN HAMBURGUESA -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- CONTENIDO -->
+<div class="collapse navbar-collapse" id="navbarContenido">
+
+  <!-- LINKS -->
+  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Inicio</a>
+    </li>
+
+    <!-- DROPDOWN TIENDA -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+        Tienda
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="perfumes.html">Perfumes</a></li>
+        <li><a class="dropdown-item" href="decants.html">Decants</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="sorteos.html">Sorteos</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="">Contacto</a>
+    </li>
+
+  </ul>
+
+
+  <!-- CARRITO (SIEMPRE VISIBLE) -->
+  <button class="btn position-relative btn_shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+    <i class="bi bi-bag-heart"></i>
+
+    <!-- CONTADOR -->
+    <span id="contador-carrito" 
+      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      0
+    </span>
+  </button>
+
+</div>
+
+
+  </div>
+</nav>
+
+
+
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero d-flex align-items-center text-white text-center">
+
+<div class="container">
+
+<h1 class="display-4 fw-bold">
+Descubre tu próxima fragancia
+</h1>
+
+<p class="lead">
+Perfumes de diseñador, árabes y decants exclusivos
+</p>
+
+<a href="perfumes.html" class="btn btn-light btn-lg mt-3">
+Ver perfumes
+</a>
+
+</div>
+
+</section>
+    
+<!-- SORTEOS -->
+<section class="promo-section" style="background-image: url('assets/imgs/sorteo.jpg');">
+  <div class="contenido text-center">
+    <h2 class="fw-bold">Sorteos</h2>
+    <p>Participa en un sorteo por cada compra o adquiere tu ticket y gana </p>
+    <a href="sorteos.html" class="btn btn-warning">Más información</a>
+  </div>
+</section>
+
+<!-- DECANTS -->
+<section class="promo-section" style="background-image: url('assets/imgs/decants.jpg');">
+  <div class="overlay"></div>
+  <div class="contenido text-center text-white">
+    <h2 class="fw-bold">Decants</h2>
+    <p>Prueba fragancias en tamaños pequeños antes de comprar</p>
+    <a href="decants.html" class="btn btn-warning">Ver decants</a>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+
+<section class="container my-5 text-center beneficios">
+
+<h2 class="fw-bold mb-4">
+¿Por qué comprar con nosotros?
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<i class="bi bi-patch-check fs-1"></i>
+
+<h5 class="mt-2">
+Perfumes originales
+</h5>
+
+<p>
+Garantizamos autenticidad en cada fragancia.
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<i class="bi bi-truck fs-1"></i>
+
+<h5 class="mt-2">
+Envíos a todo Perú
+</h5>
+
+<p>
+Entrega rápida y segura.
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<i class="bi bi-shield-check fs-1"></i>
+
+<h5 class="mt-2">
+Compra segura
+</h5>
+
+<p>
+Paga con confianza.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CARRITO -->
+
+<div
+class="offcanvas offcanvas-end"
+tabindex="-1"
+id="offcanvasRight"
+>
+
+<div class="offcanvas-header border-bottom">
+
+<h4 class="offcanvas-title">
+Carrito de compras
+</h4>
+
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="offcanvas"
+></button>
+
+</div>
+
+<div class="offcanvas-body border-bottom"></div>
+
+<div class="offcanvas-footer mt-4">
+
+<h5 class="mb-2 px-3">
+
+<span class="fw-bold">
+SUBTOTAL:
+</span>
+
+<span id="subtotal" class="fw-bold float-end fs-4">
+
+S/. 0.00
+
+</span>
+
+</h5>
+
+<div class="text-center mb-5 px-3">
+
+<button
+class="btn btn-success mt-3 w-100"
+onclick="generarPedidoWhatsApp()"
+>
+
+Enviar pedido por WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer bg-dark text-white mt-5 py-4">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6 text-center text-md-start">
+
+<p class="mb-0">
+
+© 2026 Lucky Scents PE  
+Todos los derechos reservados.
+
+</p>
+
+</div>
+
+<div class="col-md-6 text-center text-md-end">
+
+<a
+target="_blank"
+href="https://www.tiktok.com/@lucky_scentspe"
+class="text-white me-3"
+>
+
+<i class="bi bi-tiktok"></i>
+
+</a>
+
+<a
+target="_blank"
+href="https://www.instagram.com/lucky_scents_pe"
+class="text-white me-3"
+>
+
+<i class="bi bi-instagram"></i>
+
+</a>
+
+<a
+target="_blank"
+href="https://chat.whatsapp.com/BvXlw9jNj7HGEDC77dyzMo"
+class="text-white me-3"
+>
+
+<i class="bi bi-whatsapp"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/obtener_productos.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
