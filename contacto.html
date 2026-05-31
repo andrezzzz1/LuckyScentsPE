@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Perfumes | Lucky Scents PE</title>
+  <title>Contacto | Lucky Scents PE</title>
 
-  <meta name="description" content="Catálogo de perfumes árabes y de diseñador en Perú. Compra perfumes originales y exclusivos en Lucky Scents PE.">
+  <meta name="description" content="Contáctanos para comprar perfumes árabes, fragancias de diseñador, decants y participar en sorteos de Lucky Scents PE.">
 
   <link rel="shortcut icon" href="assets/imgs/favicon.ico">
 
@@ -31,7 +31,6 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarContenido">
-
       <ul class="navbar-nav mx-auto">
 
         <li class="nav-item">
@@ -39,11 +38,11 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Tienda
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="perfumes.html">Perfumes</a></li>
+            <li><a class="dropdown-item" href="perfumes.html">Perfumes</a></li>
             <li><a class="dropdown-item" href="decants.html">Decants</a></li>
           </ul>
         </li>
@@ -53,13 +52,12 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
+          <a class="nav-link active" href="contacto.html">Contacto</a>
         </li>
 
       </ul>
     </div>
 
-    <!-- CARRITO SIEMPRE VISIBLE -->
     <button class="btn position-relative btn_shopping ms-3"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight">
@@ -77,40 +75,108 @@
 </nav>
 
 
-<!-- HERO / ENCABEZADO DE PÁGINA -->
+<!-- HERO -->
 <section class="page-hero">
   <div class="container reveal">
-    <h1>Nuestros perfumes</h1>
-    <p>Descubre fragancias árabes y de diseñador para cada ocasión</p>
+    <h1>Contáctanos</h1>
+    <p>Estamos listos para ayudarte a encontrar tu próxima fragancia</p>
   </div>
 </section>
 
 
-<!-- CATÁLOGO -->
-<main class="container">
+<!-- CONTACTO PRINCIPAL -->
+<section class="container my-5">
+  <div class="row g-4 align-items-stretch">
 
-  <!-- BUSCADOR Y FILTRO -->
-  <div class="catalog-tools reveal">
+    <div class="col-md-7 reveal">
+      <div class="info-panel h-100">
 
-    <input 
-      type="text" 
-      id="buscador-productos" 
-      placeholder="Buscar por nombre o marca..."
-    >
+        <h2>Hablemos de fragancias</h2>
 
-    <select id="filtro-categoria">
-      <option value="Todos">Todas las categorías</option>
-      <option value="Perfume">Perfumes</option>
-      <option value="Decant">Decants</option>
-      <option value="Sorteo">Sorteos</option>
-    </select>
+        <p>
+          Escríbenos para consultar disponibilidad, precios, recomendaciones, decants,
+          perfumes de diseñador, perfumes árabes o sorteos activos.
+        </p>
+
+        <div class="contact-card mt-4">
+          <i class="bi bi-whatsapp"></i>
+          <div>
+            <h5>WhatsApp</h5>
+            <p>Atención rápida para pedidos y consultas.</p>
+            <a href="https://wa.me/51940815582" target="_blank" class="btn btn-primary">
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card mt-3">
+          <i class="bi bi-envelope"></i>
+          <div>
+            <h5>Correo</h5>
+            <p>ventas@luckyscentspe.com</p>
+          </div>
+        </div>
+
+        <div class="contact-card mt-3">
+          <i class="bi bi-geo-alt"></i>
+          <div>
+            <h5>Ubicación</h5>
+            <p>Atención online en Perú</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="col-md-5 reveal" data-delay="120">
+      <div class="info-panel h-100">
+
+        <h3>Redes oficiales</h3>
+        <p>Síguenos para conocer novedades, ingresos, sorteos y promociones.</p>
+
+        <div class="social-contact mt-4">
+
+          <a href="https://www.instagram.com/lucky_scents_pe" target="_blank">
+            <i class="bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://www.tiktok.com/@lucky_scentspe" target="_blank">
+            <i class="bi bi-tiktok"></i>
+            <span>TikTok</span>
+          </a>
+
+          <a href="https://wa.me/51940815582" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
 
   </div>
+</section>
 
-  <!-- PRODUCTOS DINÁMICOS -->
-  <div id="perfume-container" class="row g-4 mb-5"></div>
 
-</main>
+<!-- CTA FINAL -->
+<section class="container my-5">
+  <div class="info-panel text-center reveal">
+    <h2>¿No sabes qué perfume elegir?</h2>
+    <p>
+      Cuéntanos para qué ocasión lo necesitas, qué aromas te gustan y tu presupuesto.
+      Te ayudaremos a encontrar una fragancia ideal.
+    </p>
+
+    <a href="https://wa.me/51940815582?text=Hola%20Lucky%20Scents%2C%20quiero%20ayuda%20para%20elegir%20un%20perfume"
+      target="_blank"
+      class="btn btn-primary mt-3">
+      Pedir recomendación
+    </a>
+  </div>
+</section>
 
 
 <!-- CARRITO -->
@@ -130,8 +196,7 @@
     </h5>
 
     <div class="text-center mb-5 px-3">
-      <button class="btn btn-primary w-100 mt-3"
-        onclick="generarPedidoWhatsApp()">
+      <button class="btn btn-primary w-100 mt-3" onclick="generarPedidoWhatsApp()">
         Enviar pedido por WhatsApp
       </button>
     </div>
@@ -149,7 +214,7 @@
       <div class="col-md-4">
         <h5 class="fw-bold">Lucky Scents PE</h5>
         <p class="mb-0">
-          Tu destino para perfumes árabes, fragancias de diseñador y decants exclusivos en Perú.
+          Perfumes árabes, fragancias de diseñador, decants y sorteos para amantes de las fragancias.
         </p>
       </div>
 
@@ -186,28 +251,18 @@
 
     <hr class="my-4">
 
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-2 mb-md-0">© 2026 Lucky Scents PE. Todos los derechos reservados.</p>
-
-      <div>
-        <a href="#" class="text-white text-decoration-none me-3">Política de privacidad</a>
-        <a href="#" class="text-white text-decoration-none">Términos de servicio</a>
-      </div>
-    </div>
+    <p class="mb-0 text-center">© 2026 Lucky Scents PE. Todos los derechos reservados.</p>
 
   </div>
 </footer>
 
 
-<!-- WHATSAPP FLOTANTE -->
 <a href="https://wa.me/51940815582" target="_blank" class="whatsapp-float">
   <i class="bi bi-whatsapp"></i>
 </a>
 
 
-<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/obtener_productos.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/animations.js"></script>
 

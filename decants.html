@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Perfumes | Lucky Scents PE</title>
+  <title>Decants | Lucky Scents PE</title>
+
+  <meta name="description" content="Compra decants de perfumes árabes y de diseñador en Perú. Prueba fragancias exclusivas antes de comprar el frasco completo.">
 
   <link rel="shortcut icon" href="assets/imgs/favicon.ico">
 
@@ -16,7 +18,7 @@
 
 <body>
 
-<!-- NAVBAR (IGUAL AL INDEX) -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
   <div class="container">
 
@@ -29,7 +31,6 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarContenido">
-
       <ul class="navbar-nav mx-auto">
 
         <li class="nav-item">
@@ -51,13 +52,12 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="">Contacto</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
 
       </ul>
     </div>
 
-    <!-- 🛒 CARRITO (SIEMPRE VISIBLE) -->
     <button class="btn position-relative btn_shopping ms-3"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight">
@@ -75,19 +75,93 @@
 </nav>
 
 
-<!-- HEADER SIMPLE -->
-<section class="py-5 mt-5 text-center">
-  <div class="container">
-    <h1 class="fw-bold">Perfumes</h1>
-    <p class="text-muted">Explora nuestra colección completa</p>
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container reveal">
+    <h1>Decants exclusivos</h1>
+    <p>Prueba fragancias árabes y de diseñador antes de comprar el frasco completo</p>
   </div>
 </section>
 
 
-<!-- PRODUCTOS -->
-<div class="container mb-5">
-  <div id="perfume-container" class="row g-4"></div>
-</div>
+<!-- INFO DECANTS -->
+<section class="container my-5">
+  <div class="info-panel reveal">
+    <div class="row align-items-center gy-4">
+
+      <div class="col-md-7">
+        <h2>¿Qué es un decant?</h2>
+        <p>
+          Un decant es una presentación más pequeña de un perfume original, ideal para probar una fragancia,
+          llevarla contigo o descubrir nuevos aromas sin comprar el frasco completo.
+        </p>
+
+        <p class="mb-0">
+          En Lucky Scents PE seleccionamos fragancias exclusivas para que puedas experimentar diferentes estilos,
+          ocasiones y climas antes de decidir tu compra.
+        </p>
+      </div>
+
+      <div class="col-md-5">
+        <div class="row g-3 text-center">
+
+          <div class="col-6">
+            <div class="benefit-mini">
+              <i class="bi bi-droplet fs-2"></i>
+              <h6>Ideal para probar</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="benefit-mini">
+              <i class="bi bi-bag-heart fs-2"></i>
+              <h6>Fácil de llevar</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="benefit-mini">
+              <i class="bi bi-stars fs-2"></i>
+              <h6>Fragancias exclusivas</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="benefit-mini">
+              <i class="bi bi-whatsapp fs-2"></i>
+              <h6>Pedido por WhatsApp</h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CATÁLOGO DECANTS -->
+<main class="container">
+
+  <div class="catalog-tools reveal">
+
+    <input 
+      type="text" 
+      id="buscador-productos" 
+      placeholder="Buscar decant por nombre o marca..."
+    >
+
+    <select id="filtro-categoria">
+      <option value="Todos">Todos</option>
+      <option value="Decant">Decants</option>
+    </select>
+
+  </div>
+
+  <div id="perfume-container" class="row g-4 mb-5"></div>
+
+</main>
 
 
 <!-- CARRITO -->
@@ -107,8 +181,7 @@
     </h5>
 
     <div class="text-center mb-5 px-3">
-      <button class="btn btn-primary w-100 mt-3"
-        onclick="generarPedidoWhatsApp()">
+      <button class="btn btn-primary w-100 mt-3" onclick="generarPedidoWhatsApp()">
         Enviar pedido por WhatsApp
       </button>
     </div>
@@ -118,29 +191,66 @@
 
 
 <!-- FOOTER -->
-<footer class="footer bg-dark text-white py-4">
+<footer class="footer bg-dark text-white py-5">
   <div class="container">
-    <div class="row align-items-center">
 
-      <div class="col-md-6 text-center text-md-start">
-        <p class="mb-0">© 2026 Lucky Scents PE</p>
+    <div class="row gy-4">
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">Lucky Scents PE</h5>
+        <p class="mb-0">
+          Perfumes árabes, fragancias de diseñador y decants exclusivos en Perú.
+        </p>
       </div>
 
-      <div class="col-md-6 text-center text-md-end">
-        <a href="https://www.tiktok.com/@lucky_scentspe" class="text-white me-3"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.instagram.com/lucky_scents_pe" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-        <a href="https://chat.whatsapp.com/" class="text-white"><i class="bi bi-whatsapp"></i></a>
+      <div class="col-md-4">
+        <h6 class="fw-bold">Enlaces rápidos</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="perfumes.html" class="text-white text-decoration-none">Perfumes</a></li>
+          <li><a href="decants.html" class="text-white text-decoration-none">Decants</a></li>
+          <li><a href="sorteos.html" class="text-white text-decoration-none">Sorteos</a></li>
+          <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-bold">Síguenos</h6>
+
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://www.instagram.com/lucky_scents_pe" target="_blank" class="text-white fs-4">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@lucky_scentspe" target="_blank" class="text-white fs-4">
+            <i class="bi bi-tiktok"></i>
+          </a>
+
+          <a href="https://wa.me/51940815582" target="_blank" class="text-white fs-4">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
       </div>
 
     </div>
+
+    <hr class="my-4">
+
+    <p class="mb-0 text-center">© 2026 Lucky Scents PE. Todos los derechos reservados.</p>
+
   </div>
 </footer>
 
 
-<!-- SCRIPTS -->
+<a href="https://wa.me/51940815582" target="_blank" class="whatsapp-float">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/obtener_productos.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/animations.js"></script>
 
 </body>
 </html>
