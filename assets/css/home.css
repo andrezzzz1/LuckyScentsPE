@@ -1,0 +1,1382 @@
+/* =========================
+RESET GENERAL
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --ls-dark:#08090d;
+  --ls-dark-soft:#11141c;
+  --ls-card:#151922;
+  --ls-card-soft:#1b202b;
+  --ls-gold:#d4af37;
+  --ls-gold-soft:#f0cf6a;
+  --ls-text:#f5f5f5;
+  --ls-muted:#b8bcc7;
+  --ls-border:rgba(212,175,55,0.22);
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(212,175,55,0.08), transparent 30%),
+    linear-gradient(180deg, #08090d 0%, #11141c 45%, #08090d 100%);
+  color:var(--ls-text);
+  overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+  letter-spacing:0.5px;
+}
+
+section{
+  margin:0;
+}
+
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar{
+  background:rgba(8,9,13,0.94) !important;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(212,175,55,0.18);
+  transition:all 0.3s ease;
+  min-height:72px;
+}
+
+.navbar-brand{
+  color:var(--ls-gold) !important;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:1.35rem;
+  letter-spacing:0.8px;
+}
+
+.navbar .nav-link{
+  color:#f5f5f5 !important;
+  font-weight:500;
+  margin-left:10px;
+  position:relative;
+  transition:0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+  color:var(--ls-gold) !important;
+}
+
+.navbar .nav-link.active::after{
+  content:"";
+  position:absolute;
+  left:10px;
+  right:10px;
+  bottom:-10px;
+  height:2px;
+  background:var(--ls-gold);
+}
+
+.dropdown-menu{
+  background:#11141c;
+  border:1px solid var(--ls-border);
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.dropdown-item{
+  color:white;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active{
+  background:rgba(212,175,55,0.16);
+  color:var(--ls-gold);
+}
+
+
+/* =========================
+HERO INDEX ANTIGUO
+========================= */
+
+.hero{
+  position:relative;
+  height:90vh;
+  background:url('../imgs/hero-perfume.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  overflow:hidden;
+  margin:0;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.85)
+  );
+  z-index:1;
+}
+
+.hero .container{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  color:white !important;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:3.5rem;
+  font-weight:700;
+  text-shadow:0 3px 15px rgba(0,0,0,0.9);
+}
+
+.hero p{
+  color:#e7e7e7 !important;
+  font-size:1.25rem;
+  text-shadow:0 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero .btn{
+  padding:12px 34px;
+  font-size:1.05rem;
+  border-radius:30px;
+  border:none;
+  transition:0.3s;
+}
+
+.hero .btn:hover{
+  transform:translateY(-3px);
+}
+
+
+/* =========================
+INDEX - HERO LUXURY
+========================= */
+
+.hero-luxury{
+  position:relative;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 75% 35%, rgba(212,175,55,0.18), transparent 28%),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06), transparent 22%),
+    linear-gradient(180deg, #07080c 0%, #11141c 58%, #08090d 100%);
+  overflow:hidden;
+  padding-top:72px;
+}
+
+.hero-luxury::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.65)),
+    url("../imgs/hero-perfume.jpg") center/cover no-repeat;
+  opacity:0.22;
+  z-index:0;
+}
+
+.hero-luxury .container{
+  position:relative;
+  z-index:2;
+}
+
+.hero-badge{
+  display:inline-block;
+  color:var(--ls-gold);
+  border:1px solid var(--ls-border);
+  background:rgba(255,255,255,0.04);
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:0.85rem;
+  font-weight:700;
+  letter-spacing:0.8px;
+  margin-bottom:20px;
+}
+
+.hero-luxury h1{
+  font-family:Georgia, "Times New Roman", serif;
+  color:white;
+  font-size:4rem;
+  line-height:1.05;
+  margin-bottom:22px;
+}
+
+.hero-luxury h1 span{
+  color:var(--ls-gold);
+  display:block;
+}
+
+.hero-luxury p{
+  color:var(--ls-muted);
+  font-size:1.15rem;
+  max-width:560px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.btn-outline-luxury{
+  border:1px solid var(--ls-border);
+  color:white;
+  background:rgba(255,255,255,0.04);
+  font-weight:700;
+  border-radius:14px;
+  padding:12px 18px;
+}
+
+.btn-outline-luxury:hover{
+  color:#111;
+  background:var(--ls-gold);
+  border-color:var(--ls-gold);
+}
+
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:36px;
+  max-width:560px;
+}
+
+.hero-stats div{
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  border-radius:18px;
+  padding:18px;
+}
+
+.hero-stats strong{
+  display:block;
+  color:var(--ls-gold);
+  font-size:1.3rem;
+}
+
+.hero-stats span{
+  color:var(--ls-muted);
+  font-size:0.82rem;
+}
+
+
+/* =========================
+PERFUME FLOTANTE INDEX
+========================= */
+
+.perfume-showcase{
+  position:relative;
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.glow-circle{
+  position:absolute;
+  width:390px;
+  height:390px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(212,175,55,0.34), transparent 65%);
+  filter:blur(8px);
+  animation:pulseGlow 4s ease-in-out infinite;
+}
+
+.floating-perfume{
+  position:relative;
+  z-index:2;
+  max-height:470px;
+  max-width:78%;
+  object-fit:contain;
+  border-radius:26px;
+  box-shadow:0 30px 90px rgba(0,0,0,0.65);
+  animation:floatingPerfume 4.5s ease-in-out infinite;
+}
+
+.floating-card{
+  position:absolute;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(17,20,28,0.82);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--ls-border);
+  color:white;
+  border-radius:18px;
+  padding:14px 18px;
+  box-shadow:0 18px 45px rgba(0,0,0,0.4);
+}
+
+.floating-card i{
+  color:var(--ls-gold);
+  font-size:1.4rem;
+}
+
+.card-top{
+  top:110px;
+  right:25px;
+  animation:floatingCard 5s ease-in-out infinite;
+}
+
+.card-bottom{
+  bottom:120px;
+  left:10px;
+  animation:floatingCard 5.5s ease-in-out infinite;
+}
+
+@keyframes floatingPerfume{
+  0%,100%{
+    transform:translateY(0) rotate(-1deg);
+  }
+  50%{
+    transform:translateY(-18px) rotate(1deg);
+  }
+}
+
+@keyframes floatingCard{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-12px);
+  }
+}
+
+@keyframes pulseGlow{
+  0%,100%{
+    opacity:0.65;
+    transform:scale(1);
+  }
+  50%{
+    opacity:1;
+    transform:scale(1.08);
+  }
+}
+
+
+/* =========================
+HERO DE PÁGINAS INTERNAS
+========================= */
+
+.page-hero{
+  min-height:330px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:130px 20px 80px;
+  background:
+    linear-gradient(rgba(8,9,13,0.78), rgba(8,9,13,0.92)),
+    url("../imgs/hero-perfume.jpg") center/cover no-repeat;
+  border-bottom:1px solid var(--ls-border);
+}
+
+.page-hero h1{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:3.2rem;
+  color:white !important;
+  margin-bottom:15px;
+}
+
+.page-hero p{
+  color:var(--ls-muted) !important;
+  font-size:1.1rem;
+}
+
+
+/* =========================
+SECCIONES PROMO INDEX
+========================= */
+
+.promo-section{
+  position:relative;
+  min-height:460px;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  margin:0;
+  padding:80px 20px;
+}
+
+.promo-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.82)
+  );
+  z-index:1;
+}
+
+.promo-section .contenido{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:white !important;
+  max-width:760px;
+}
+
+.promo-section h2{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:2.7rem;
+  font-weight:700;
+  color:white !important;
+  text-shadow:0 3px 15px rgba(0,0,0,0.9);
+}
+
+.promo-section p{
+  color:#f1f1f1 !important;
+  font-size:1.1rem;
+  text-shadow:0 2px 10px rgba(0,0,0,0.8);
+}
+
+.promo-section .btn{
+  border-radius:30px;
+  padding:12px 30px;
+  font-weight:700;
+}
+
+
+/* =========================
+BUSCADOR Y FILTROS
+========================= */
+
+.catalog-tools{
+  margin:55px auto 45px;
+  display:grid;
+  grid-template-columns:1fr 260px;
+  gap:18px;
+}
+
+.catalog-tools input,
+.catalog-tools select{
+  background:#10131a;
+  border:1px solid var(--ls-border);
+  color:white;
+  padding:14px 18px;
+  border-radius:14px;
+  outline:none;
+  width:100%;
+}
+
+.catalog-tools input::placeholder{
+  color:#8e93a1;
+}
+
+.catalog-tools input:focus,
+.catalog-tools select:focus{
+  border-color:var(--ls-gold);
+  box-shadow:0 0 0 3px rgba(212,175,55,0.12);
+}
+
+
+/* =========================
+CARDS DE PRODUCTOS
+========================= */
+
+.card,
+.custom-card{
+  background:linear-gradient(180deg, #171b24 0%, #11141c 100%) !important;
+  border:1px solid rgba(212,175,55,0.18) !important;
+  border-radius:22px !important;
+  overflow:hidden;
+  color:white !important;
+  box-shadow:0 18px 45px rgba(0,0,0,0.35);
+  transition:transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.card:hover,
+.custom-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(212,175,55,0.48) !important;
+  box-shadow:0 24px 60px rgba(0,0,0,0.55);
+}
+
+.card > img.card-img-top{
+  height:300px;
+  width:100%;
+  object-fit:cover;
+  display:block;
+  background:#0d0f15;
+  transition:transform 0.45s ease;
+}
+
+.card:hover > img.card-img-top{
+  transform:scale(1.06);
+}
+
+.card-body{
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+}
+
+.card-brand{
+  color:var(--ls-gold);
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  font-size:0.75rem;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.card-title{
+  font-family:Georgia, "Times New Roman", serif;
+  color:white !important;
+  font-size:1.25rem;
+  margin-bottom:8px;
+}
+
+.card-meta{
+  color:var(--ls-muted);
+  font-size:0.9rem;
+  margin-bottom:12px;
+}
+
+.card-description{
+  color:#c9cbd3;
+  font-size:0.88rem;
+  min-height:58px;
+}
+
+.price{
+  color:var(--ls-gold) !important;
+  font-size:1.45rem;
+  font-weight:800;
+}
+
+
+/* =========================
+OVERLAY DECANT PREMIUM AJUSTADO
+========================= */
+
+.product-image-wrapper{
+  position:relative;
+  overflow:hidden;
+  background:#0d0f15;
+}
+
+.product-image-wrapper .product-image-main{
+  display:block;
+  width:100%;
+  height:300px !important;
+  object-fit:cover;
+  transition:transform 0.45s ease;
+}
+
+.card:hover .product-image-wrapper .product-image-main{
+  transform:scale(1.06);
+}
+
+/* Fondo elegante del decant */
+.decant-badge{
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  z-index:4;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:8px;
+  border-radius:18px;
+
+  background:linear-gradient(
+    145deg,
+    rgba(8, 9, 13, 0.72),
+    rgba(35, 30, 20, 0.62)
+  );
+
+  border:1px solid rgba(212,175,55,0.34);
+
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+
+  box-shadow:
+    0 10px 26px rgba(0,0,0,0.60),
+    0 0 18px rgba(212,175,55,0.18);
+
+  transition:0.3s ease;
+}
+
+.card:hover .decant-badge{
+  transform:translateY(-3px);
+  box-shadow:
+    0 14px 34px rgba(0,0,0,0.70),
+    0 0 24px rgba(212,175,55,0.24);
+}
+
+/* Imagen PNG del decant */
+.decant-overlay{
+  display:block;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  pointer-events:none;
+
+  transform:scale(1.18) !important;
+  transform-origin:center;
+
+  filter:
+    drop-shadow(0 5px 10px rgba(0,0,0,0.65))
+    drop-shadow(0 0 8px rgba(255,255,255,0.12));
+}
+
+/* 5 ml */
+.decant-5ml-size{
+  width:95px;
+  height:95px;
+}
+
+/* 10 ml: exactamente el doble que 5 ml */
+.decant-10ml-size{
+  width:95px;
+  height:130px;
+}
+
+/* Por defecto */
+.decant-default-size{
+  width:120px;
+  height:120px;
+}
+
+
+/* =========================
+BOTONES
+========================= */
+
+.btn-primary,
+.btn-cart{
+  background:var(--ls-gold) !important;
+  border:none !important;
+  color:#111 !important;
+  font-weight:700;
+  border-radius:14px;
+  padding:12px 16px;
+  transition:all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-cart:hover{
+  background:var(--ls-gold-soft) !important;
+  color:#111 !important;
+  transform:translateY(-2px);
+}
+
+.btn-warning{
+  background:var(--ls-gold) !important;
+  border:none !important;
+  color:#111 !important;
+  font-weight:700;
+}
+
+.btn-warning:hover{
+  background:var(--ls-gold-soft) !important;
+}
+
+
+/* =========================
+BOTÓN CARRITO NAVBAR
+========================= */
+
+.bi-bag-heart{
+  font-size:22px;
+}
+
+.btn_shopping{
+  background:#b8e8f7 !important;
+  border:1px solid #b3b3b3 !important;
+  color:#111 !important;
+  border-radius:14px;
+}
+
+.btn_shopping:hover{
+  animation:swing 0.6s ease forwards;
+}
+
+
+/* =========================
+CARRITO OFFCANVAS
+========================= */
+
+.offcanvas{
+  width:400px;
+  background:#11141c;
+  color:white;
+  border-left:1px solid var(--ls-border);
+  transition:transform 0.6s ease, opacity 0.6s ease;
+}
+
+.offcanvas.show{
+  transform:translateX(0);
+  opacity:1;
+}
+
+.offcanvas:not(.show){
+  transform:translateX(100%);
+  opacity:0;
+}
+
+.offcanvas-header{
+  background:#0b0d12 !important;
+  color:white;
+  border-bottom:1px solid var(--ls-border) !important;
+}
+
+.offcanvas-body{
+  background:#11141c !important;
+  color:white;
+}
+
+.offcanvas-footer{
+  background:#0b0d12;
+  color:white;
+}
+
+.btn-close{
+  filter:invert(1);
+}
+
+#offcanvasRight{
+  margin-top:72px;
+  height:calc(100% - 72px);
+}
+
+.offcanvas-body img{
+  height:65px;
+  width:65px;
+  object-fit:cover;
+}
+
+.title-product{
+  color:white;
+}
+
+.detalles-product{
+  color:var(--ls-muted);
+}
+
+.fs-5,
+.precio{
+  color:var(--ls-gold) !important;
+}
+
+.fs-6,
+.color-gris{
+  color:#b8bcc7 !important;
+}
+
+
+/* =========================
+BENEFICIOS
+========================= */
+
+.beneficios{
+  color:white;
+  padding:90px 20px;
+}
+
+.beneficios h2{
+  color:white !important;
+  font-family:Georgia, "Times New Roman", serif;
+}
+
+.beneficios h5{
+  color:white !important;
+}
+
+.beneficios p{
+  color:var(--ls-muted) !important;
+}
+
+.beneficios i{
+  color:var(--ls-gold);
+}
+
+.beneficios .col-md-4{
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  border-radius:22px;
+  padding:32px 24px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.beneficios .col-md-4:hover{
+  transform:translateY(-6px);
+  border-color:rgba(212,175,55,0.5);
+}
+
+
+/* =========================
+PANELES DE INFORMACIÓN
+========================= */
+
+.info-panel{
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  border-radius:28px;
+  padding:45px;
+  box-shadow:0 18px 50px rgba(0,0,0,0.35);
+}
+
+.info-panel h2,
+.info-panel h3{
+  font-family:Georgia, "Times New Roman", serif;
+  color:white;
+}
+
+.info-panel p,
+.info-panel li{
+  color:var(--ls-muted);
+}
+
+
+/* =========================
+BLOQUES MINI BENEFICIOS
+========================= */
+
+.benefit-mini{
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  border-radius:20px;
+  padding:25px 18px;
+  height:100%;
+  transition:0.3s;
+}
+
+.benefit-mini:hover{
+  transform:translateY(-6px);
+  border-color:rgba(212,175,55,0.48);
+  box-shadow:0 18px 40px rgba(0,0,0,0.35);
+}
+
+.benefit-mini i{
+  color:var(--ls-gold);
+  margin-bottom:12px;
+}
+
+.benefit-mini h5,
+.benefit-mini h6{
+  color:white;
+  margin-top:10px;
+}
+
+.benefit-mini p{
+  color:var(--ls-muted);
+  margin-bottom:0;
+}
+
+
+/* =========================
+CONTACTO
+========================= */
+
+.contact-card{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  border-radius:20px;
+  padding:22px;
+  transition:0.3s;
+}
+
+.contact-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(212,175,55,0.48);
+}
+
+.contact-card i{
+  color:var(--ls-gold);
+  font-size:2rem;
+}
+
+.contact-card h5{
+  color:white;
+  margin-bottom:6px;
+}
+
+.contact-card p{
+  color:var(--ls-muted);
+  margin-bottom:8px;
+}
+
+.social-contact{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.social-contact a{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:18px 20px;
+  border-radius:18px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.social-contact a:hover{
+  transform:translateX(6px);
+  border-color:rgba(212,175,55,0.48);
+  color:var(--ls-gold);
+}
+
+.social-contact i{
+  font-size:1.6rem;
+  color:var(--ls-gold);
+}
+
+
+/* =========================
+INDEX - TITULOS Y CATEGORIAS
+========================= */
+
+.section-title span{
+  color:var(--ls-gold);
+  text-transform:uppercase;
+  letter-spacing:1.6px;
+  font-size:0.8rem;
+  font-weight:800;
+}
+
+.section-title h2{
+  color:white;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:2.6rem;
+  margin-top:10px;
+}
+
+.section-title p{
+  color:var(--ls-muted);
+  max-width:650px;
+  margin:12px auto 0;
+}
+
+.category-card{
+  display:block;
+  height:100%;
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--ls-border);
+  border-radius:26px;
+  padding:34px 28px;
+  text-decoration:none;
+  color:white;
+  transition:0.35s;
+  box-shadow:0 18px 45px rgba(0,0,0,0.28);
+}
+
+.category-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(212,175,55,0.55);
+  box-shadow:0 24px 65px rgba(0,0,0,0.5);
+  color:white;
+}
+
+.category-icon{
+  width:62px;
+  height:62px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(212,175,55,0.12);
+  border:1px solid var(--ls-border);
+  margin-bottom:24px;
+}
+
+.category-icon i{
+  color:var(--ls-gold);
+  font-size:1.7rem;
+}
+
+.category-card h3{
+  font-family:Georgia, "Times New Roman", serif;
+  color:white;
+  margin-bottom:12px;
+}
+
+.category-card p{
+  color:var(--ls-muted);
+  min-height:72px;
+}
+
+.category-card span{
+  color:var(--ls-gold);
+  font-weight:700;
+}
+
+
+/* =========================
+INDEX - EXPERIENCIA
+========================= */
+
+.fragrance-experience{
+  padding:90px 0;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(212,175,55,0.08), transparent 28%),
+    rgba(255,255,255,0.02);
+  border-top:1px solid rgba(212,175,55,0.12);
+  border-bottom:1px solid rgba(212,175,55,0.12);
+}
+
+.experience-image{
+  position:relative;
+  border-radius:32px;
+  overflow:hidden;
+  border:1px solid var(--ls-border);
+  box-shadow:0 30px 80px rgba(0,0,0,0.5);
+}
+
+.experience-image img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  display:block;
+  transition:0.5s;
+}
+
+.experience-image:hover img{
+  transform:scale(1.06);
+}
+
+.fragrance-experience h2{
+  font-family:Georgia, "Times New Roman", serif;
+  color:white;
+  font-size:2.7rem;
+  margin-bottom:18px;
+}
+
+.fragrance-experience p{
+  color:var(--ls-muted);
+  font-size:1.05rem;
+}
+
+.experience-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-top:28px;
+}
+
+.experience-list div{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:#e5e7eb;
+}
+
+.experience-list i{
+  color:var(--ls-gold);
+  font-size:1.2rem;
+  margin-top:2px;
+}
+
+
+/* =========================
+INDEX - CTA FINAL
+========================= */
+
+.home-cta-box{
+  text-align:center;
+  border:1px solid var(--ls-border);
+  border-radius:32px;
+  padding:65px 28px;
+  background:
+    radial-gradient(circle at center, rgba(212,175,55,0.13), transparent 35%),
+    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+  box-shadow:0 26px 70px rgba(0,0,0,0.45);
+}
+
+.home-cta-box span{
+  color:var(--ls-gold);
+  text-transform:uppercase;
+  letter-spacing:1.6px;
+  font-weight:800;
+  font-size:0.82rem;
+}
+
+.home-cta-box h2{
+  color:white;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:2.6rem;
+  margin:14px 0;
+}
+
+.home-cta-box p{
+  color:var(--ls-muted);
+  max-width:720px;
+  margin:0 auto 28px;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+.footer{
+  background:#07080c !important;
+  border-top:1px solid var(--ls-border);
+  color:white;
+}
+
+.footer h5,
+.footer h6{
+  color:white;
+  font-family:Georgia, "Times New Roman", serif;
+}
+
+.footer p,
+.footer a,
+.footer li{
+  color:#d7d9df !important;
+}
+
+.footer a{
+  transition:0.3s;
+}
+
+.footer a:hover{
+  color:var(--ls-gold) !important;
+}
+
+
+/* =========================
+WHATSAPP FLOTANTE
+========================= */
+
+.whatsapp-float{
+  position:fixed;
+  right:28px;
+  bottom:28px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#25D366;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.6rem;
+  z-index:9999;
+  box-shadow:0 12px 35px rgba(37,211,102,0.35);
+  text-decoration:none;
+  transition:transform 0.25s ease;
+}
+
+.whatsapp-float:hover{
+  transform:scale(1.08);
+  color:white;
+}
+
+
+/* =========================
+ANIMACIONES
+========================= */
+
+.balanceo{
+  animation:swing 0.6s ease forwards;
+  display:inline-block;
+}
+
+@keyframes swing{
+  0%{transform:rotate(0)}
+  25%{transform:rotate(15deg)}
+  50%{transform:rotate(-10deg)}
+  75%{transform:rotate(5deg)}
+  100%{transform:rotate(0)}
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(35px);
+  transition:opacity 0.45s ease, transform 0.45s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.reveal-left{
+  opacity:0;
+  transform:translateX(-45px);
+  transition:opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-left.active{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.reveal-right{
+  opacity:0;
+  transform:translateX(45px);
+  transition:opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-right.active{
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+  .navbar .nav-link.active::after{
+    display:none;
+  }
+
+  .catalog-tools{
+    grid-template-columns:1fr;
+  }
+
+  .hero-luxury h1{
+    font-size:3rem;
+  }
+
+  .perfume-showcase{
+    min-height:430px;
+  }
+
+  .floating-perfume{
+    max-height:360px;
+  }
+
+  .hero-stats{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:768px){
+  .hero{
+    height:75vh;
+  }
+
+  .hero h1{
+    font-size:2.3rem;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+  .hero-luxury{
+    padding-top:90px;
+  }
+
+  .hero-luxury h1{
+    font-size:2.45rem;
+  }
+
+  .hero-luxury p{
+    font-size:1rem;
+  }
+
+  .perfume-showcase{
+    min-height:360px;
+  }
+
+  .floating-card{
+    display:none;
+  }
+
+  .page-hero{
+    min-height:260px;
+    padding:110px 20px 60px;
+  }
+
+  .page-hero h1{
+    font-size:2.2rem;
+  }
+
+  .promo-section{
+    min-height:340px;
+    padding:60px 18px;
+  }
+
+  .promo-section h2{
+    font-size:2.1rem;
+  }
+
+  .card > img.card-img-top,
+  .product-image-wrapper .product-image-main{
+    height:260px !important;
+  }
+
+  .decant-badge{
+    right:10px;
+    bottom:10px;
+    padding:5px;
+  }
+
+  .decant-5ml-size{
+  width:72px;
+  height:72px;
+}
+
+.decant-10ml-size{
+  width:100px;
+  height:100px;
+}
+
+.decant-default-size{
+  width:90px;
+  height:90px;
+}
+
+  .info-panel{
+    padding:28px;
+  }
+
+  .offcanvas{
+    width:100%;
+  }
+
+  #offcanvasRight{
+    margin-top:72px;
+    height:calc(100% - 72px);
+  }
+
+  .section-title h2,
+  .fragrance-experience h2,
+  .home-cta-box h2{
+    font-size:2rem;
+  }
+
+  .experience-image img{
+    height:360px;
+  }
+}
